@@ -229,3 +229,4 @@ C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\obj\Debug\net9.0\refint\BlogMVC.dll
 C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\obj\Debug\net9.0\BlogMVC.pdb
 C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\obj\Debug\net9.0\BlogMVC.genruntimeconfig.cache
 C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\obj\Debug\net9.0\ref\BlogMVC.dll
+C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\obj\Debug\net9.0\BlogMVC.sourcelink.json
