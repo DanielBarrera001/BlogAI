@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Migrations\\20260116034632_TablasEntradasComentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BlogMVC\\Migrations\\20260116034632_TablasEntradasComentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|c:\\users\\daniel\\source\\repos\\blogmvc\\blogmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|solutionrelative:blogmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|c:\\users\\daniel\\source\\repos\\blogmvc\\blogmvc\\servicios\\serviciousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|solutionrelative:blogmvc\\servicios\\serviciousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|c:\\users\\daniel\\source\\repos\\blogmvc\\blogmvc\\servicios\\almacenadorarchivoslocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|solutionrelative:blogmvc\\servicios\\almacenadorarchivoslocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|c:\\users\\daniel\\source\\repos\\blogmvc\\blogmvc\\servicios\\ialmacenadorarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|solutionrelative:blogmvc\\servicios\\ialmacenadorarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|c:\\users\\daniel\\source\\repos\\blogmvc\\blogmvc\\migrations\\20260116034632_tablasentradascomentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|solutionrelative:blogmvc\\migrations\\20260116034632_tablasentradascomentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18D75477-2B6D-4083-93E8-649053BC263D}|BlogMVC\\BlogMVC.csproj|c:\\users\\daniel\\source\\repos\\blogmvc\\blogmvc\\entidades\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +46,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicioUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Servicios\\ServicioUsuarios.cs",
+              "RelativeDocumentMoniker": "BlogMVC\\Servicios\\ServicioUsuarios.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Servicios\\ServicioUsuarios.cs",
+              "RelativeToolTip": "BlogMVC\\Servicios\\ServicioUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T01:12:00.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Program.cs",
+              "RelativeDocumentMoniker": "BlogMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Program.cs",
+              "RelativeToolTip": "BlogMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T01:11:18.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlmacenadorArchivosLocal.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "RelativeDocumentMoniker": "BlogMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "RelativeToolTip": "BlogMVC\\Servicios\\AlmacenadorArchivosLocal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T01:04:03.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAlmacenadorArchivos.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "RelativeDocumentMoniker": "BlogMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "ToolTip": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "RelativeToolTip": "BlogMVC\\Servicios\\IAlmacenadorArchivos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T00:59:50.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "20260116034632_TablasEntradasComentarios.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Migrations\\20260116034632_TablasEntradasComentarios.cs",
               "RelativeDocumentMoniker": "BlogMVC\\Migrations\\20260116034632_TablasEntradasComentarios.cs",
@@ -47,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "20260116032127_TablasEntradasComentarios.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Migrations\\20260116032127_TablasEntradasComentarios.cs",
               "RelativeDocumentMoniker": "BlogMVC\\Migrations\\20260116032127_TablasEntradasComentarios.cs",
@@ -55,12 +123,11 @@
               "RelativeToolTip": "BlogMVC\\Migrations\\20260116032127_TablasEntradasComentarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T03:21:27.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T03:21:27.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Datos\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "BlogMVC\\Datos\\ApplicationDbContext.cs",
@@ -68,12 +135,11 @@
               "RelativeToolTip": "BlogMVC\\Datos\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T03:19:45.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T03:19:45.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Comentario.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Entidades\\Comentario.cs",
               "RelativeDocumentMoniker": "BlogMVC\\Entidades\\Comentario.cs",
@@ -81,12 +147,11 @@
               "RelativeToolTip": "BlogMVC\\Entidades\\Comentario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T03:14:56.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T03:14:56.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Entrada.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\source\\repos\\BlogMVC\\BlogMVC\\Entidades\\Entrada.cs",
               "RelativeDocumentMoniker": "BlogMVC\\Entidades\\Entrada.cs",
@@ -94,8 +159,7 @@
               "RelativeToolTip": "BlogMVC\\Entidades\\Entrada.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T03:11:35.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T03:11:35.178Z"
             }
           ]
         }
