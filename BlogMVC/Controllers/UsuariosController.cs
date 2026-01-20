@@ -1,9 +1,12 @@
-﻿using BlogMVC.Entidades;
+﻿using BlogMVC.Datos;
+using BlogMVC.Entidades;
 using BlogMVC.Models;
+using BlogMVC.Servicios;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogMVC.Controllers
 {
@@ -11,12 +14,14 @@ namespace BlogMVC.Controllers
     {
         private readonly UserManager<Usuario> userManager;
         private readonly SignInManager<Usuario> signInManager;
+        private readonly ApplicationDbContext context;
 
         public UsuariosController(UserManager<Usuario> userManager,
-            SignInManager<Usuario> signInManager)
+            SignInManager<Usuario> signInManager, ApplicationDbContext context)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
+            this.context = context;
         }
 
         public IActionResult Registro()
@@ -93,6 +98,22 @@ namespace BlogMVC.Controllers
         {
             await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        //[Authorize(Roles =Constantes.RolAdmin)]
+        public async Task<IActionResult> Listado(string? mensaje = null)
+        {
+            var usuarios = await context.Users.Select(x => new UsuarioViewModel
+            {
+                Id = x.Id,
+                Email = x.Email!
+            }).ToListAsync();
+
+            var modelo = new UsuariosListadoViewModel();
+            modelo.Usuarios = usuarios;
+            modelo.Mensaje = mensaje;
+            return View(modelo);
         }
     }
 }
