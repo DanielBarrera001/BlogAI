@@ -101,7 +101,7 @@ namespace BlogMVC.Controllers
         }
 
         [HttpGet]
-        //[Authorize(Roles =Constantes.RolAdmin)]
+        [Authorize(Roles = Constantes.RolAdmin)]
         public async Task<IActionResult> Listado(string? mensaje = null)
         {
             var usuarios = await context.Users.Select(x => new UsuarioViewModel
@@ -115,5 +115,53 @@ namespace BlogMVC.Controllers
             modelo.Mensaje = mensaje;
             return View(modelo);
         }
+
+        [HttpGet]
+        [Authorize(Roles = Constantes.RolAdmin)]
+        public async Task<IActionResult> RolesUsuario(string usuarioId)
+        {
+            var usuario = await userManager.FindByIdAsync(usuarioId);
+
+            if(usuario is null)
+            {
+                return RedirectToAction("NoEncontrado", "Home");
+            }
+
+            var rolesQueElUsuarioTiene = await userManager.GetRolesAsync(usuario);
+            var rolesExistentes = await context.Roles.ToListAsync();
+
+            var rolesDelUsuario = rolesExistentes.Select(x => new UsuarioRolViewModel{
+                Nombre = x.Name!,
+                LoTiene = rolesQueElUsuarioTiene.Contains(x.Name!)
+            });
+
+            var modelo = new UsuariosRolesUsuarioViewModel
+            {
+                UsuarioId = usuarioId,
+                Email = usuario.Email!,
+                Roles = rolesDelUsuario.OrderBy(x => x.Nombre)
+            };
+
+            return View(modelo);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = Constantes.RolAdmin)]
+        public async Task<IActionResult> EditarRoles(EditarRolesViewModel modelo)
+        {
+            var usuario = await userManager.FindByIdAsync(modelo.UsuarioId);
+
+            if(usuario is null)
+            {
+                return RedirectToAction("NoEncontrado", "Home");
+            }
+
+            await context.UserRoles.Where(x => x.UserId == usuario.Id).ExecuteDeleteAsync();
+            await userManager.AddToRolesAsync(usuario, modelo.RolesSeleccionados);
+
+            var mensaje = $"Los roles de {usuario.Email} han sido actualizados";
+            return RedirectToAction("Listado", new { mensaje });
+        }
+
     }
 }

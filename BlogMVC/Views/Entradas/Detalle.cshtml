@@ -1,0 +1,37 @@
+﻿@model EntradaDetalleViewModel
+
+@{
+    ViewData["Title"] = Model.Titulo;
+    var fechaPublicacionConFormato = Model.FechaPublicacion.ToString("dd, MMM,yyyy");
+}
+
+<h3>@Model.Titulo</h3>
+<h6>@Model.EscritoPor | @fechaPublicacionConFormato</h6>
+
+@if (!string.IsNullOrEmpty(Model.PortadaUrl))
+{
+    <img alt="portada" src="@Model.PortadaUrl" class="img-fluid"/>
+}
+
+<div id="contenido">
+
+</div>
+
+<input type="hidden" id="cuerpoDelta" name="cuerpoDelta" value="@Model.Cuerpo"/>
+
+@section Scripts{
+    <script type="module">
+        import {QuillDeltaToHtmlConverter} from "https://cdn.jsdelivr.net/npm/quill-delta-to-html/+esm";
+
+        const deltaString = $("#cuerpoDelta").val();
+        const delta = JSON.parse(deltaString);
+        const converter = new QuillDeltaToHtmlConverter(delta);
+
+        const contenido = document.getElementById("contenido");
+        contenido.innerHTML = converter.convert();
+
+        document.querySelectorAll('pre').forEach(el =>{
+            hljs.highlightElement(el);
+        })
+    </script>
+}

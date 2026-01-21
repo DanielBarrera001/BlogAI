@@ -34,7 +34,7 @@ namespace BlogMVC.Servicios
 
             var request = httpContextAccessor.HttpContext!.Request;
             var url = $"{request.Scheme}://{request.Host}";
-            var urlArchivo = Path.Combine(url, contenedor, nombreArchivo, contenedor).Replace("\\","/");
+            var urlArchivo = $"{url}/{contenedor}/{nombreArchivo}";
             return urlArchivo;
 
         }

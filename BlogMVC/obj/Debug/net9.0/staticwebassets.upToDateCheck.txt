@@ -1,5 +1,11 @@
 wwwroot\css\site.css
+wwwroot\entradas\1813d908-2c4c-44db-9cb7-148886be2b0f.PNG
+wwwroot\entradas\c9826d39-5432-4494-9c45-8955a7858d63.png
+wwwroot\entradas\ca904655-32a9-42b5-b53d-94d6b2253dd0.JPG
+wwwroot\entradas\e0451fac-c6cd-4f58-846e-fa27dbc8af50.png
+wwwroot\entradas\e501b7bd-e9c8-455e-a13e-57203bd6358a.JPG
 wwwroot\favicon.ico
+wwwroot\js\formulario-entradas.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -117,3 +123,4 @@ C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\wwwroot\lib\jquery\dist\jquery.min.js
 C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\wwwroot\lib\jquery\dist\jquery.min.map
 C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Daniel\source\repos\BlogMVC\BlogMVC\wwwroot\js\formulario-entradas.js
